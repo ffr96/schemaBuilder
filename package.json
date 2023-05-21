@@ -1,0 +1,21 @@
+{
+  "name": "schemabuilder",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Transform yaml-like text to a schema.json & schemaTranslate.json cornerstone-like.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ffr96/schemabuilder.git"
+  },
+  "author": "ffr96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ffr96/schemabuilder/issues"
+  },
+  "homepage": "https://github.com/ffr96/schemabuilder#readme"
+}

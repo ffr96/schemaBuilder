@@ -1,0 +1,122 @@
+Mega menu
+type: heading
+Enable
+id: scf_menu
+type: checkbox
+default: false
+Layout
+id: scf_menu_layout
+type: select
+Horizontal|horizontal
+Vertical|vertical
+Columns|columns
+Cascade|cascade
+default: none
+reference: scf_menu
+reference_default: false
+Menu Height
+id: scf_menu_height
+type: select
+Small|small
+Medium|medium
+Large|large
+default: medium
+reference: scf_menu
+reference_default: false
+Hide links to web pages
+id: hide_content_navigation
+type: checkbox
+default: false
+Category name color
+id: scf_menu_cat_name_color
+type: color
+default: #333333
+reference: scf_menu
+reference_default: false
+Category name hover and selected color
+id: scf_menu_cat_name_hover_color
+type: color
+default: #444444
+reference: scf_menu
+reference_default: false
+Category icon position (image name: cat_icon_{{category_name}}.png)
+id: scf_menu_cat_icon_position
+type: select
+None|none
+Before category name|before
+After category name|after
+default: none
+reference: scf_menu
+reference_default: false
+Menu bar background color
+id: scf_menu_bar_bkg_color
+type: color
+default: #EDF0F2
+reference: scf_menu
+reference_default: false
+Subcategory name color
+id: scf_menu_scat_name_color
+type: color
+default: #333333
+reference: scf_menu
+reference_default: false
+Subcategory icon position (image name: cat_icon_{{category_name}}.png)
+id: scf_menu_scat_icon_position
+type: select
+None|none
+Before category name|before
+After category name|after
+default: none
+reference: scf_menu
+reference_default: false
+Menu text color
+id: navPages-color
+type: color
+default: #333333
+Menu hover and selected text color
+id: navPages-color-hover
+type: color
+default: #333333
+Menu background color
+id: navPages-subMenu-backgroundColor
+type: color
+default: #EDF0F2
+"All category" position
+id: hide_content_navigation
+type: checkbox
+default: false
+"All category" text template
+id: scf_menu_all_text
+type: text
+default: All @category_name
+reference: scf_menu_all_position
+reference_default: none
+Category image position
+id: scf_menu_cat_img_position
+type: select
+None|none
+Top|top
+Bottom|bottom
+Below last option|last
+Right (Bottom on mobile)|right
+default: none
+reference: scf_menu
+reference_default: false
+Category image source
+id: scf_menu_cat_img_source
+type: select
+Category image|category
+Image name: menu_{{category_name}}.png|image-mgr
+default: category
+reference: scf_menu_cat_img_position
+reference_default: none
+Subcategory image position
+id: scf_menu_scat_img_position
+type: select
+None|none
+Above name|above
+Below name|below
+Below last option|bottom
+default: none
+reference: scf_menu
+reference_default: false
