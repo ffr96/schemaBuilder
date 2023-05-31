@@ -1,72 +1,34 @@
-Display widget #1
-type: heading
-Position
-id: scf_dw1_position
-type: select
-Off|none
-Image top left|top-left
-Image top center|top-center
-Image top right|top-right
-Image bottom left|bottom-left
-Image bottom center|bottom-center
-Image bottom right|bottom-right
-Below product name|below-name
-At the end of product name|end-name
-Price row 1|price-row-1
-Price row 2|price-row-2
-default: price-row-1
-Format
-id: scf_dw1_format
-type: select
-Circle|circle
-Label|label
-Burst|burst
-Box|box
-default: label
-reference: scf_dw1_position
-reference_default: "none"
-Size
-id: scf_dw1_size
-type: select
-Small|small
-Medium|medium
-Large|large
-default: medium
-reference: scf_dw1_position
-reference_default: "none"
-Template for active price
-id: scf_dw1_active_price_tpl
+Enable
+id: scf_dbc1
+type: checkbox
+default: false
+Start date
+id: scf_dbc1_start
 type: text
-default: @price
-reference: scf_dw1_position
-reference_default: "none"
-Template for Strikethrough price (before price)
-id: scf_dw1_override_price_tpl
+default: 2000-01-01 00:00:00
+reference: scf_dbc1
+reference_default: false
+End date
+id: scf_dbc1_end
 type: text
-default: Was @price
-reference: scf_dw1_position
-reference_default: "none"
-Font color
-id: scf_dw1_color
-type: color
-default: #333333
-reference: scf_dw1_position
-reference_default: "none"
-Background color
-id: scf_dw1_bkg_color
-type: color
-default: #FFFFFF
-reference: scf_dw1_position
-reference_default: "none"
-Strikethrough price style
-id: scf_dw1_sprice-style
-type: select
-Strikethrough price|strike-price
-Strikethrough price - Smaller|strike-price-smaller
-Strikethrough price - Smaller - No colors|strike-price smaller-nocolor
-Strikethrough all|strike-all
-Strikethrough all - Smaller|strike-all-smaller
-Strikethrough all - Smaller - No colors|strike-all-smaller-nocolor
-default: strike-price
-reference: scf_dw1_position
-reference_default: none
+default: 2099-12-31 23:59:59
+reference: scf_dbc1
+reference_default: false
+Parent discount category
+id: scf_dbc1_category
+type: text
+default: _goups/discount_1
+reference: scf_dbc1
+reference_default: false
+Exclude items on Sale
+id: scf_dbc1_exclude_sale
+type: checkbox
+default: false
+reference: scf_dbc1
+reference_default: false
+Applies to all customers (the discount is independent of the customer)
+id: scf_dbc1_always_apply
+type: checkbox
+default: false
+reference: scf_dbc1
+reference_default: false
